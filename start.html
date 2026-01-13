@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>공룡 스쿨 게임 시작</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: 'Malgun Gothic', sans-serif;
+        }
+        button {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.1s;
+        }
+        button:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+        button:active {
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+
+    <button onclick="startGame()">🎮 게임 시작하기</button>
+
+    <script>
+        function startGame() {
+            // index.html을 팝업으로 엽니다.
+            // width=1024, height=600 부분 숫자를 게임 해상도에 맞춰 수정하세요.
+            window.open('index.html', 'DinoGame', 'width=1024,height=600,resizable=yes,scrollbars=no');
+        }
+    </script>
+
+</body>
+</html>
